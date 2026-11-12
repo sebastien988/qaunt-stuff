@@ -1,0 +1,85 @@
+{
+ "20": {
+  "held_out_start": "2024-10-08",
+  "champion": {
+   "features": [
+    "Nasdaq return 21d",
+    "news tone 7d",
+    "volatility 21d/126d"
+   ],
+   "lam": 0.1,
+   "window": 1000,
+   "half_life": null,
+   "vol_scale": false
+  },
+  "tried": 561,
+  "runs": [
+   {
+    "run": 1,
+    "date": "2026-11-12",
+    "validation": 0.016159081834585476,
+    "held_out": -0.07521905141018403,
+    "tried": 81,
+    "improved": true
+   },
+   {
+    "run": 2,
+    "date": "2026-11-12",
+    "validation": 0.026653069888484038,
+    "held_out": -0.08685507271998438,
+    "tried": 161,
+    "improved": true
+   },
+   {
+    "run": 3,
+    "date": "2026-11-12",
+    "validation": 0.029383450351667006,
+    "held_out": -0.09356495726487468,
+    "tried": 241,
+    "improved": true
+   },
+   {
+    "run": 4,
+    "date": "2026-11-12",
+    "validation": 0.03046989306339698,
+    "held_out": -0.09403393281402916,
+    "tried": 321,
+    "improved": true
+   },
+   {
+    "run": 5,
+    "date": "2026-11-12",
+    "validation": 0.04599628037593706,
+    "held_out": -0.09785258897757365,
+    "tried": 401,
+    "improved": true
+   },
+   {
+    "run": 6,
+    "date": "2026-11-12",
+    "validation": 0.04599628037593706,
+    "held_out": -0.09785258897757365,
+    "tried": 481,
+    "improved": false
+   },
+   {
+    "run": 7,
+    "date": "2026-11-12",
+    "validation": 0.04599628037593706,
+    "held_out": -0.09785258897757365,
+    "tried": 561,
+    "improved": false
+   }
+  ],
+  "predictions": {
+   "2026-11-12": {
+    "price": 166.19000244140625,
+    "q10": 147.27388377233422,
+    "q50": 168.3447634512725,
+    "q90": 203.74373263492294,
+    "chance_up": 0.554,
+    "run": 7
+   }
+  }
+ }
+}

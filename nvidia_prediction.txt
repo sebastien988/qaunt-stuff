@@ -1,0 +1,96 @@
+# Nvidia (NVDA) price prediction from news tone
+
+- **Generated:** 11 November 2026
+- **Starting price:** $174.79 (NVDA, 11 November 2026)
+- **Produced by:** `nvidia_prediction.py`, a statistical script. This is not financial advice.
+
+## Summary
+
+Nvidia is predicted to move about **+3.2% over the next 20 trading days**, to roughly **$180.43**. The range of likely outcomes is very wide, and a check against past data found that using the news **did not help** compared with ignoring it. Treat this as "what usually happened in similar conditions", not as a price target.
+
+## Prediction: next 20 trading days
+
+| Measure | Value |
+|---|---|
+| Average move | +3.2% (to about $180.43) |
+| Typical (median) move | +3.3% |
+| Range in 8 of 10 similar past cases | -14.9% to +19.1% ($148.70 to $208.20) |
+| Share of similar past cases where the price rose | 64% |
+| Forecast ignoring the news | +4.4% average, rose in 64% of cases |
+
+Based on 813 past trading days when the news tone was similarly low.
+
+## Prediction: next 5 trading days
+
+| Measure | Value |
+|---|---|
+| Average move | +0.5% (to about $175.59) |
+| Typical (median) move | +0.6% |
+| Range in 8 of 10 similar past cases | -8.9% to +9.4% ($159.22 to $191.19) |
+| Share of similar past cases where the price rose | 53% |
+| Forecast ignoring the news | +1.1% average, rose in 58% of cases |
+
+Based on 818 past trading days when the news tone was similarly low.
+
+## The news signal
+
+- **Current value:** -0.03, the average tone of news about Nvidia over the 30 days before 11 November 2026.
+- **How unusual:** more negative than 97% of earlier days. It falls in the "low" group.
+- **What tone means:** a score of how positive or negative the wording of articles is. Above 0 is positive wording, below 0 is negative. The long-run average for Nvidia is +0.69.
+- **Source:** the GDELT project, which scores each day's English-language online news articles mentioning Nvidia, from 2017 onwards.
+
+## Recent headlines (context only, not used in the calculation)
+
+From Yahoo Finance. These are headlines as published; the script did not verify them.
+
+- 2026-11-11: Nvidia stock is pricing in 2 major risks as CEO Jensen Huang's affair fallout plays out
+- 2026-11-11: Market rally offers a much-needed boost for investors, CoreWeave beats third-quarter estimates
+- 2026-11-11: CoreWeave surges, but bigger tests loom for the AI trade
+- 2026-11-11: Jensen Huang espionage controversy will cast a long shadow over Nvidia, veteran tech strategist warns
+- 2026-11-11: Wall Street is cooling on Jensen Huang's Nvidia — but history says don't give up on the stock just yet
+- 2026-11-11: Nvidia could face fines, lawsuits, and lost markets: Baird strategist
+- 2026-11-11: CoreWeave stock skyrockets post-earnings: Top takeaways
+- 2026-11-11: Tech rises as CoreWeave results reignite AI trade: AlphaCheck
+
+## How the prediction is made
+
+1. Average the daily news tone over the last 30 days, using only news published before the day of the prediction.
+2. Sort that value into low, middle or high, compared with all earlier days.
+3. Look up what Nvidia's share price did over the following trading days after every past day in the same group.
+4. Report the average move, the median, the range covering 8 of 10 cases, and how often the price rose.
+
+## How reliable it is
+
+The method was checked on past trading days. Each past prediction used only data available before that day.
+
+### 20-day predictions, 06 February 2020 to 14 October 2026
+
+| News tone was | Days | Predicted move | Actual move | Price rose |
+|---|---|---|---|---|
+| Low | 741 | +3.5% | +2.6% | 57% |
+| Middle | 583 | +2.3% | +4.5% | 62% |
+| High | 346 | +6.8% | +11.0% | 79% |
+
+- The average miss of the forecast was 11.0% with the news and 11.0% ignoring it.
+- The chance-of-rising forecast scored 0.240 with the news and 0.234 ignoring it (Brier score; lower is better).
+- **Verdict: using the news did not help.**
+
+### 5-day predictions, 15 January 2020 to 04 November 2026
+
+| News tone was | Days | Predicted move | Actual move | Price rose |
+|---|---|---|---|---|
+| Low | 753 | +0.5% | +0.2% | 52% |
+| Middle | 591 | +1.3% | +1.7% | 62% |
+| High | 356 | +1.3% | +2.4% | 63% |
+
+- The average miss of the forecast was 5.3% with the news and 5.3% ignoring it.
+- The chance-of-rising forecast scored 0.244 with the news and 0.245 ignoring it (Brier score; lower is better).
+- **Verdict: using the news did not help.**
+
+## Limits
+
+- The forecast range is wide; see the average miss above.
+- The news signal measures wording, not facts. It does not know what the stories are about or whether they are true.
+- The history starts in 2017, a period in which Nvidia's share price rose strongly, so the averages lean positive.
+- Multi-day outcomes overlap from one day to the next, so the day counts overstate how much independent evidence there is.
+- This file is rewritten each time the script runs. The numbers go out of date as prices and news change; check the generated date.

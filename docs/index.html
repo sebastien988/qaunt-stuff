@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Trading algorithms, market scans and forecasts, each tested on past data and reported honestly.">
+  <title>Quant Research</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #f6f7f9; --card: #fff; --ink: #1c2330; --soft: #5d6878; --line: #dde2ea; --link: #1a5fb4; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #12161d; --card: #1b212b; --ink: #e6eaf0; --soft: #9aa6b8; --line: #2b3442; --link: #7ab3ff; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; background: var(--bg); color: var(--ink); }
+    header, main, footer { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    header { padding-top: 48px; padding-bottom: 8px; }
+    h1 { margin: 0 0 6px; font-size: 2.2rem; }
+    header p { margin: 0 0 14px; color: var(--soft); font-size: 1.1rem; }
+    .note { border-left: 4px solid #c9892b; background: var(--card); padding: 10px 14px; border-radius: 4px; font-size: .95rem; color: var(--ink); }
+    article { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 20px; margin: 24px 0; }
+    h2 { margin: 0 0 8px; font-size: 1.25rem; }
+    article p { margin: 0 0 10px; }
+    .meta { color: var(--soft); font-size: .9rem; }
+    a { color: var(--link); }
+    img { display: block; width: 100%; height: auto; margin-top: 12px; border-radius: 6px; border: 1px solid var(--line); background: #fff; }
+    footer { color: var(--soft); font-size: .9rem; padding-top: 8px; padding-bottom: 48px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Quant Research</h1>
+    <p>Trading algorithms, market scans and forecasts, each tested on past data and reported honestly.</p>
+    <p class="note">Educational research, not financial advice. Charts describe the past and statistical forecasts; most of the forecasts here did not beat simple baselines, and the reports say so.</p>
+    <p><a href="https://github.com/sebastien988/qaunt-stuff">All the code is on GitHub</a></p>
+  </header>
+  <main>
+    <article>
+      <h2>Predict the US industrial sector and its largest companies</h2>
+      <p>The sector is the Industrial Select Sector SPDR fund (XLI). The companies are 36 large US industrials with a long price history.</p>
+      <p class="meta">Chart updated 12 November 2026 · <a href="https://github.com/sebastien988/qaunt-stuff/blob/main/industrial_prediction.py">Code: industrial_prediction.py</a> · <a href="https://github.com/sebastien988/qaunt-stuff/blob/main/industrial_prediction.md">Full report</a></p>
+      <a href="charts/industrial_prediction.png"><img loading="lazy" src="charts/industrial_prediction.png" alt="Predict the US industrial sector and its largest companies (industrial_prediction.png)"></a>
+    </article>
+    <article>
+      <h2>Nvidia prediction that keeps learning: every run searches for a better model</h2>
+      <p>The script remembers its work in nvidia_learning.json. On every run it:</p>
+      <p class="meta">Chart updated 12 November 2026 · <a href="https://github.com/sebastien988/qaunt-stuff/blob/main/nvidia_learning.py">Code: nvidia_learning.py</a> · <a href="https://github.com/sebastien988/qaunt-stuff/blob/main/nvidia_learning.md">Full report</a></p>
+      <a href="charts/nvidia_learning.png"><img loading="lazy" src="charts/nvidia_learning.png" alt="Nvidia prediction that keeps learning: every run searches for a better model (nvidia_learning.png)"></a>
+    </article>
+    <article>
+      <h2>Quant research with standard textbook formulas, numpy only</h2>
+      <p>Four studies on twelve ETFs (stocks, bonds, credit, gold, commodities, property):</p>
+      <p class="meta">Chart updated 12 November 2026 · <a href="https://github.com/sebastien988/qaunt-stuff/blob/main/quant_research.py">Code: quant_research.py</a> · <a href="https://github.com/sebastien988/qaunt-stuff/blob/main/quant_research.md">Full report</a></p>
+      <a href="charts/quant_research.png"><img loading="lazy" src="charts/quant_research.png" alt="Quant research with standard textbook formulas, numpy only (quant_research.png)"></a>
+    </article>
+    <article>
+      <h2>Chart each US stock-market sector over the past ten years</h2>
+      <p>One panel per sector, showing how $1 invested grew (dividends included) against the S&amp;P 500, plus a panel ranking the sectors by yearly return. Each sector is its SPDR sector ETF. A sector whose fund is younger than the period is drawn from the fund&#x27;s first day, with the S&amp;P 500 restarted there.</p>
+      <p class="meta">Chart updated 11 November 2026 · <a href="https://github.com/sebastien988/qaunt-stuff/blob/main/sector_chart.py">Code: sector_chart.py</a></p>
+      <a href="charts/sector_chart.png"><img loading="lazy" src="charts/sector_chart.png" alt="Chart each US stock-market sector over the past ten years (sector_chart.png)"></a>
+    </article>
+    <article>
+      <h2>Scan bond markets: yield, recent returns and risk, saved as a PNG</h2>
+      <p>Each bond market is an ETF. For every fund the scan shows: - yield: the income it pays per year, as reported by Yahoo Finance - returns over 1, 3, 6 and 12 months, interest included - score: the average of the 3-, 6- and 12-month returns (recent strength) - volatility: how much the price moves, a measure of risk - whether the price is above its 200-day average</p>
+      <p class="meta">Chart updated 11 November 2026 · <a href="https://github.com/sebastien988/qaunt-stuff/blob/main/bond_scan.py">Code: bond_scan.py</a></p>
+      <a href="charts/bond_scan.png"><img loading="lazy" src="charts/bond_scan.png" alt="Scan bond markets: yield, recent returns and risk, saved as a PNG (bond_scan.png)"></a>
+    </article>
+    <article>
+      <h2>Pick crypto coins to hold for the next two weeks, and test how the rule did</h2>
+      <p>Rule, applied every 14 days: 1. Score each coin by the average of its 14-day and 28-day price change. 2. If Bitcoin is below its 50-day average, hold nothing (cash): when the whole market is falling, most coins fall with it. 3. Otherwise hold the 5 highest-scoring coins in equal amounts for 14 days.</p>
+      <p class="meta">Chart updated 11 November 2026 · <a href="https://github.com/sebastien988/qaunt-stuff/blob/main/crypto_scan.py">Code: crypto_scan.py</a></p>
+      <a href="charts/crypto_scan.png"><img loading="lazy" src="charts/crypto_scan.png" alt="Pick crypto coins to hold for the next two weeks, and test how the rule did (crypto_scan.png)"></a>
+    </article>
+    <article>
+      <h2>Rank markets by recent strength and by price/earnings ratio, as PNGs</h2>
+      <p>Each market is an ETF. The score is the average of its 3-, 6- and 12-month returns (the measure the &quot;Leaders&quot; strategy in combined_algo.py uses). Strength is a description of the recent past, not a forecast.</p>
+      <p class="meta">Chart updated 11 November 2026 · <a href="https://github.com/sebastien988/qaunt-stuff/blob/main/market_scan.py">Code: market_scan.py</a></p>
+      <a href="charts/market_scan.png"><img loading="lazy" src="charts/market_scan.png" alt="Rank markets by recent strength and by price/earnings ratio, as PNGs (market_scan.png)"></a><a href="charts/market_top10.png"><img loading="lazy" src="charts/market_top10.png" alt="Rank markets by recent strength and by price/earnings ratio, as PNGs (market_top10.png)"></a>
+    </article>
+    <article>
+      <h2>Predict Nvidia&#x27;s share price move from the tone of the news about it</h2>
+      <p>News data: the GDELT project reads worldwide online news and publishes the average tone (positive or negative wording) of each day&#x27;s English-language articles mentioning Nvidia, back to 2017.</p>
+      <p class="meta">Chart updated 11 November 2026 · <a href="https://github.com/sebastien988/qaunt-stuff/blob/main/nvidia_prediction.py">Code: nvidia_prediction.py</a> · <a href="https://github.com/sebastien988/qaunt-stuff/blob/main/nvidia_prediction.txt">Full report</a></p>
+      <a href="charts/nvidia_prediction.png"><img loading="lazy" src="charts/nvidia_prediction.png" alt="Predict Nvidia&#x27;s share price move from the tone of the news about it (nvidia_prediction.png)"></a>
+    </article>
+    <article>
+      <h2>Chart every algorithm in this folder against the S&amp;P 500</h2>
+      <p>Draws the trained algorithm (trained_algo.py), the combined multi-strategy algorithm (combined_algo.py) and the two moving-average crossovers (trading_algo.py) over the same period, alongside buying and holding the S&amp;P 500 (SPY, dividends included). Everything pays the same trading cost and earns the Treasury-bill rate on cash.</p>
+      <p class="meta">Chart updated 11 November 2026 · <a href="https://github.com/sebastien988/qaunt-stuff/blob/main/compare_chart.py">Code: compare_chart.py</a></p>
+      <a href="charts/comparison.png"><img loading="lazy" src="charts/comparison.png" alt="Chart every algorithm in this folder against the S&amp;P 500 (comparison.png)"></a>
+    </article>
+    <article>
+      <h2>Multi-strategy, multi-asset trading algorithm with a backtest</h2>
+      <p>Four strategies each decide how much of ten ETFs (stocks, bonds, gold, commodities, property) to hold. Their allocations are averaged, and whatever is not invested sits in cash.</p>
+      <p class="meta">Chart updated 11 November 2026 · <a href="https://github.com/sebastien988/qaunt-stuff/blob/main/combined_algo.py">Code: combined_algo.py</a></p>
+      <a href="charts/combined.png"><img loading="lazy" src="charts/combined.png" alt="Multi-strategy, multi-asset trading algorithm with a backtest (combined.png)"></a>
+    </article>
+    <article>
+      <h2>Moving-average crossover trading strategy, trained by walk-forward optimisation</h2>
+      <p>Rule: hold the asset while the fast moving average is above the slow one, otherwise stay in cash.</p>
+      <p class="meta">Chart updated 11 November 2026 · <a href="https://github.com/sebastien988/qaunt-stuff/blob/main/trading_algo.py">Code: trading_algo.py</a></p>
+      <a href="charts/backtest.png"><img loading="lazy" src="charts/backtest.png" alt="Moving-average crossover trading strategy, trained by walk-forward optimisation (backtest.png)"></a>
+    </article>
+  </main>
+  <footer>
+    <p>12 charts from 12 scripts. Site built 12 November 2026
+    by publish.py. Click a chart to open it full size.</p>
+  </footer>
+</body>
+</html>
