@@ -41,13 +41,17 @@ Honesty about "better"
 Usage:
     python nvidia_learning.py               # 20 trading days ahead
     python nvidia_learning.py --days 5
-    python nvidia_learning.py --tries 200   # search harder this run
+    python nvidia_learning.py --seconds 120 # search harder this run (default 30 s, all CPU cores)
+    python nvidia_learning.py --tries 200   # try a fixed number of models instead of a time budget
     python nvidia_learning.py --reset       # forget everything for this horizon
 """
 
 import argparse
 import json
 import math
+import multiprocessing
+import os
+import time
 from datetime import date
 from pathlib import Path
 
@@ -215,6 +219,54 @@ def skill(loss: np.ndarray, base_loss: np.ndarray, mask: np.ndarray) -> float:
 
 # ----------------------------------------------------------------- search
 
+_JOB: dict = {}  # shared with worker processes (inherited through fork)
+
+
+def evaluate(cfg: dict) -> tuple[float, np.ndarray]:
+    """Worst skill across the validation blocks, and the forecasts."""
+    job = _JOB
+    forecasts = walk_forward(job["data"], cfg)
+    if np.isnan(forecasts[job["known"]]).any():
+        return -np.inf, forecasts
+    model_loss = pinball(job["y"], forecasts)
+    return min(skill(model_loss, job["base_loss"], block) for block in job["blocks"]), forecasts
+
+
+def score_only(cfg: dict) -> float:
+    return evaluate(cfg)[0]
+
+
+def search(rng, champion: dict, best: float, names: list[str], seconds: float, tries: int | None):
+    """Try candidates until the time budget (or fixed count) is used; keep any that beat the champion.
+
+    Candidates are scored in parallel, one batch at a time; each batch is half small changes to the
+    current champion and half random models.
+    """
+    workers = os.cpu_count() or 1
+    batch_size = workers * 2
+    tried = improved = 0
+    stop = time.monotonic() + seconds
+    try:
+        pool = multiprocessing.get_context("fork").Pool(workers) if workers > 1 else None
+    except (ValueError, OSError):
+        pool = None
+    try:
+        while (tries is None and time.monotonic() < stop) or (tries is not None and tried < tries):
+            size = batch_size if tries is None else min(batch_size, tries - tried)
+            batch = [mutate(rng, champion, names) if i % 2 == 0 else random_config(rng, names)
+                     for i in range(size)]
+            scores = pool.map(score_only, batch) if pool else [score_only(c) for c in batch]
+            tried += size
+            top = int(np.argmax(scores))
+            if scores[top] > best + MARGIN:
+                champion, best, improved = batch[top], scores[top], improved + 1
+    finally:
+        if pool:
+            pool.close()
+            pool.join()
+    return champion, best, tried, improved, workers
+
+
 def random_config(rng, names: list[str]) -> dict:
     count = int(rng.integers(1, 6))
     return {
@@ -339,13 +391,15 @@ def save_chart(path: Path, data: Data, memory: dict, champ: np.ndarray, base_los
 def main() -> None:
     parser = argparse.ArgumentParser(description="Nvidia prediction that searches for a better model every run.")
     parser.add_argument("--days", type=int, default=20, help="trading days ahead to predict")
-    parser.add_argument("--tries", type=int, default=80, help="new candidate models to try this run")
+    parser.add_argument("--seconds", type=float, default=30, help="seconds to spend searching for a better model")
+    parser.add_argument("--tries", type=int, default=None,
+                        help="try exactly this many models instead of searching for --seconds")
     parser.add_argument("--reset", action="store_true", help="forget what was learned for this horizon")
     parser.add_argument("--chart", default=str(FOLDER / "nvidia_learning.png"))
     parser.add_argument("--report", default=str(FOLDER / "nvidia_learning.md"))
     args = parser.parse_args()
-    if args.days < 1 or args.tries < 0:
-        raise SystemExit("--days must be at least 1 and --tries at least 0.")
+    if args.days < 1 or (args.tries is not None and args.tries < 0) or args.seconds < 0:
+        raise SystemExit("--days must be at least 1, --tries and --seconds at least 0.")
 
     print("Loading prices and news...")
     market, tone = load_market(), load_tone()
@@ -377,13 +431,7 @@ def main() -> None:
     for part in np.array_split(np.flatnonzero(masks["validation"]), BLOCKS):
         blocks.append(np.isin(row, part))
 
-    def evaluate(cfg):
-        """Worst skill across the validation blocks, and the forecasts."""
-        forecasts = walk_forward(data, cfg)
-        if np.isnan(forecasts[known]).any():
-            return -np.inf, forecasts
-        model_loss = pinball(y, forecasts)
-        return min(skill(model_loss, base_loss, block) for block in blocks), forecasts
+    _JOB.update(data=data, known=known, y=y, base_loss=base_loss, blocks=blocks)
 
     # Champion from earlier runs, re-scored on today's data, then this run's candidates.
     rng = np.random.default_rng([args.days, memory["tried"]])
@@ -394,13 +442,16 @@ def main() -> None:
     else:
         champion = memory["champion"]
     best, champ = evaluate(champion)
-    before, improved = best, 0
-    for i in range(args.tries):
-        candidate = mutate(rng, champion, data.names) if i % 2 == 0 else random_config(rng, data.names)
-        score, forecasts = evaluate(candidate)
-        if score > best + MARGIN:
-            champion, best, champ, improved = candidate, score, forecasts, improved + 1
-    memory["tried"] += args.tries
+    before = best
+    budget = f"{args.tries} models" if args.tries is not None else f"{args.seconds:g} seconds"
+    print(f"Training: searching for a better model for {budget} on {os.cpu_count() or 1} CPU cores...")
+    started = time.monotonic()
+    champion, best, tried, improved, workers = search(rng, champion, best, data.names, args.seconds, args.tries)
+    elapsed = time.monotonic() - started
+    print(f"  tried {tried} models in {elapsed:.1f} s ({tried / max(elapsed, 1e-9):.1f} per second)")
+    if improved:
+        best, champ = evaluate(champion)
+    memory["tried"] += tried
     memory["champion"] = champion
 
     loss = pinball(y, champ)
@@ -410,7 +461,7 @@ def main() -> None:
     coverage = inside[masks["held_out"]].mean()
     memory["runs"].append({
         "run": len(memory["runs"]) + 1, "date": str(date.today()), "validation": best, "held_out": held_out,
-        "tried": memory["tried"], "improved": improved > 0,
+        "tried": memory["tried"], "improved": improved > 0, "seconds": round(elapsed, 1), "this_run": tried,
     })
 
     # Today's forecast from a fresh fit, saved for later runs to score.
@@ -455,7 +506,8 @@ def main() -> None:
               f"{before:+.2%} -> {best:+.2%}" if improved else "no better model found this run; champion kept")
     verdict = ("beats" if held_out > 0 else "does not beat")
     summary = [
-        f"{TICKER} at ${price:,.2f} on {day:%Y-%m-%d}.  Run {run['run']}, {memory['tried']} models tried in total.",
+        f"{TICKER} at ${price:,.2f} on {day:%Y-%m-%d}.  Run {run['run']}, {memory['tried']} models tried in total "
+        f"({tried} this run in {elapsed:.0f} s).",
         "",
         f"FORECAST for the next {args.days} trading days",
         f"  Median            {math.expm1(live[1]):+.1%}  (to about ${to_price(live[1]):,.2f})",

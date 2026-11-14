@@ -1,0 +1,47 @@
+{
+  "months": {
+    "momentum": 201.0,
+    "ridge": 201.0,
+    "mlp": 201.0
+  },
+  "mean_ic": {
+    "momentum": 0.0066,
+    "ridge": 0.0309,
+    "mlp": 0.0242
+  },
+  "ic_t_stat": {
+    "momentum": 0.4819,
+    "ridge": 2.7522,
+    "mlp": 2.9117
+  },
+  "hit_rate_ic_pos": {
+    "momentum": 0.5174,
+    "ridge": 0.5771,
+    "mlp": 0.5572
+  },
+  "ls_ann_return": {
+    "momentum": 0.0477,
+    "ridge": 0.1508,
+    "mlp": 0.0677
+  },
+  "ls_sharpe": {
+    "momentum": 0.1983,
+    "ridge": 0.8838,
+    "mlp": 0.5005
+  },
+  "long_excess_ann": {
+    "momentum": 0.0839,
+    "ridge": 0.1154,
+    "mlp": 0.0374
+  },
+  "long_excess_ir": {
+    "momentum": 0.559,
+    "ridge": 1.0983,
+    "mlp": 0.4146
+  },
+  "avg_turnover": {
+    "momentum": 0.2825,
+    "ridge": 0.4743,
+    "mlp": 0.6951
+  }
+}

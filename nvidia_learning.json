@@ -12,7 +12,7 @@
    "half_life": null,
    "vol_scale": false
   },
-  "tried": 561,
+  "tried": 1953,
   "runs": [
    {
     "run": 1,
@@ -69,6 +69,56 @@
     "held_out": -0.09785258897757365,
     "tried": 561,
     "improved": false
+   },
+   {
+    "run": 8,
+    "date": "2026-11-13",
+    "validation": 0.04599873461963855,
+    "held_out": -0.09785267388680108,
+    "tried": 641,
+    "improved": false
+   },
+   {
+    "run": 9,
+    "date": "2026-11-13",
+    "validation": 0.04599873461963855,
+    "held_out": -0.09785267388680108,
+    "tried": 721,
+    "improved": false
+   },
+   {
+    "run": 10,
+    "date": "2026-11-13",
+    "validation": 0.04599873461963855,
+    "held_out": -0.09785267388680108,
+    "tried": 801,
+    "improved": false
+   },
+   {
+    "run": 11,
+    "date": "2026-11-13",
+    "validation": 0.04599873461963855,
+    "held_out": -0.09785267388680108,
+    "tried": 881,
+    "improved": false
+   },
+   {
+    "run": 12,
+    "date": "2026-11-13",
+    "validation": 0.04599873461963855,
+    "held_out": -0.09785267388680108,
+    "tried": 961,
+    "improved": false
+   },
+   {
+    "run": 13,
+    "date": "2026-11-13",
+    "validation": 0.04599873461963855,
+    "held_out": -0.09785267388680108,
+    "tried": 1953,
+    "improved": false,
+    "seconds": 30.3,
+    "this_run": 992
    }
   ],
   "predictions": {
@@ -79,6 +129,14 @@
     "q90": 203.74373263492294,
     "chance_up": 0.554,
     "run": 7
+   },
+   "2026-11-13": {
+    "price": 162.85000610351562,
+    "q10": 143.98871935231156,
+    "q50": 164.55184061539674,
+    "q90": 199.24697970745044,
+    "chance_up": 0.54,
+    "run": 13
    }
   }
  }

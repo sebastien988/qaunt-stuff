@@ -1,0 +1,255 @@
+$XLF: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$IWF: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+
+2 Failed downloads:
+['XLF', 'IWF']: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$EWJ: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$EWW: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+
+2 Failed downloads:
+['EWJ', 'EWW']: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$XLF: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+
+1 Failed download:
+['XLF']: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$^GSPC: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+
+1 Failed download:
+['^GSPC']: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$^GSPC: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+
+1 Failed download:
+['^GSPC']: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$^GSPC: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+
+1 Failed download:
+['^GSPC']: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$EURUSD=X: possibly delisted; no price data found  (1d 1927-12-09 -> 2026-11-14)
+
+1 Failed download:
+['EURUSD=X']: possibly delisted; no price data found  (1d 1927-12-09 -> 2026-11-14)
+$MMM: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$APA: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$AAPL: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$AFL: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+Failed to get ticker 'AIG' reason: Failed to perform, curl: (28) Operation timed out after 10001 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$LNT: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$AIG: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$AXP: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$AEP: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$AMAT: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$ADM: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$MO: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$APD: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+
+12 Failed downloads:
+['MMM', 'APA', 'AAPL', 'AFL', 'LNT', 'AIG', 'AXP', 'AEP', 'AMAT', 'ADM', 'MO', 'APD']: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$BNY: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$CAH: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$BAC: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$T: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$BALL: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$BDX: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$BAX: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$BMY: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$ATO: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+
+9 Failed downloads:
+['BNY', 'CAH', 'BAC', 'T', 'BALL', 'BDX', 'BAX', 'BMY', 'ATO']: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$ED: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$CL: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$CCL: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$CMCSA: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$CMS: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$SCHW: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$CINF: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$CAT: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$CVX: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+
+9 Failed downloads:
+['ED', 'CL', 'CCL', 'CMCSA', 'CMS', 'SCHW', 'CINF', 'CAT', 'CVX']: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$ETN: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$DOV: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$DD: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$DTE: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$DUK: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$D: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$DRI: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$ECL: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$CSX: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$EIX: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$CRH: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$DE: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$DECK: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+Failed to get ticker 'DXCM' reason: Failed to perform, curl: (28) Operation timed out after 10003 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$CCI: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$CVS: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$COO: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$EBAY: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$DHR: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$CMI: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$GLW: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+
+20 Failed downloads:
+['ETN', 'DOV', 'DD', 'DTE', 'DUK', 'D', 'DRI', 'ECL', 'CSX', 'EIX', 'CRH', 'DE', 'DECK', 'CCI', 'CVS', 'COO', 'EBAY', 'DHR', 'CMI', 'GLW']: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$EQT: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$FITB: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$XOM: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+Failed to get ticker 'EXE' reason: Failed to perform, curl: (28) Operation timed out after 10001 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$EXE: possibly delisted; no timezone found
+$ETR: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$FLEX: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$FAST: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$F: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$FDX: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$FDS: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$EXC: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$FRT: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$EOG: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+
+13 Failed downloads:
+['EQT', 'FITB', 'XOM', 'ETR', 'FLEX', 'FAST', 'F', 'FDX', 'FDS', 'EXC', 'FRT', 'EOG']: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+['EXE']: possibly delisted; no timezone found
+$GE: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$HON: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+Failed to get ticker 'HWM' reason: Failed to perform, curl: (28) Operation timed out after 10000 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$HWM: possibly delisted; no timezone found
+$GD: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+Failed to get ticker 'GEV' reason: Failed to perform, curl: (28) Operation timed out after 10001 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$GEV: possibly delisted; no timezone found
+$BEN: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$FCX: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+Failed to get ticker 'HCA' reason: Failed to perform, curl: (28) Operation timed out after 10000 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$HCA: possibly delisted; no timezone found
+$GL: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$GILD: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$DOC: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$HPQ: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$HAL: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$HUBB: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+Failed to get ticker 'GIS' reason: Failed to perform, curl: (28) Operation timed out after 10004 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$GIS: possibly delisted; no timezone found
+Failed to get ticker 'GPC' reason: Failed to perform, curl: (28) Operation timed out after 10002 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$GPC: possibly delisted; no timezone found
+$GPN: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$HST: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$HAS: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$IBM: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$HRL: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+
+21 Failed downloads:
+['GE', 'HON', 'GD', 'BEN', 'FCX', 'GL', 'GILD', 'DOC', 'HPQ', 'HAL', 'HUBB', 'GPN', 'HST', 'HAS', 'IBM', 'HRL']: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+['HWM', 'GEV', 'HCA', 'GIS', 'GPC']: possibly delisted; no timezone found
+$JKHY: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$IFF: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$KR: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$JCI: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$JPM: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$IVZ: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$KLAC: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$LVS: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$KMB: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$LHX: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+Failed to get ticker 'JNJ' reason: Failed to perform, curl: (28) Operation timed out after 10003 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$JNJ: possibly delisted; no timezone found
+$INTC: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$ISRG: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$J: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+
+14 Failed downloads:
+['JKHY', 'IFF', 'KR', 'JCI', 'JPM', 'IVZ', 'KLAC', 'LVS', 'KMB', 'LHX', 'INTC', 'ISRG', 'J']: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+['JNJ']: possibly delisted; no timezone found
+$MKC: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$LEN: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$LOW: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$MRSH: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$MRK: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$MSI: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+Failed to get ticker 'MAR' reason: Failed to perform, curl: (28) Operation timed out after 10003 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$MAR: possibly delisted; no timezone found
+$MRVL: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$L: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$LLY: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$MAS: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$LMT: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$MDT: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+
+13 Failed downloads:
+['MKC', 'LEN', 'LOW', 'MRSH', 'MRK', 'MSI', 'MRVL', 'L', 'LLY', 'MAS', 'LMT', 'MDT']: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+['MAR']: possibly delisted; no timezone found
+$OXY: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$PCG: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$PFE: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$OKE: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$NSC: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$NEM: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$PNR: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$NVDA: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$ORLY: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$NEE: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$ODFL: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$PCAR: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$PH: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$NDAQ: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$NUE: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$NOC: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+Failed to get ticker 'PLTR' reason: Failed to perform, curl: (28) Operation timed out after 10001 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$PLTR: possibly delisted; no timezone found
+$NKE: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+Failed to get ticker 'NXPI' reason: Failed to perform, curl: (28) Operation timed out after 10001 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$NXPI: possibly delisted; no timezone found
+$PEP: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$PAYX: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$NFLX: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+
+22 Failed downloads:
+['OXY', 'PCG', 'PFE', 'OKE', 'NSC', 'NEM', 'PNR', 'NVDA', 'ORLY', 'NEE', 'ODFL', 'PCAR', 'PH', 'NDAQ', 'NUE', 'NOC', 'NKE', 'PEP', 'PAYX', 'NFLX']: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+['PLTR', 'NXPI']: possibly delisted; no timezone found
+$ROK: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$PHM: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$RVTY: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$PWR: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$RL: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$RJF: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$SPGI: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+Failed to get ticker 'REGN' reason: Failed to perform, curl: (28) Operation timed out after 10000 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$REGN: possibly delisted; no timezone found
+$RSG: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$RTX: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+Failed to get ticker 'RMD' reason: Failed to perform, curl: (28) Operation timed out after 10001 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$RMD: possibly delisted; no timezone found
+Failed to get ticker 'SNDK' reason: Failed to perform, curl: (28) Operation timed out after 10001 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$SNDK: possibly delisted; no timezone found
+Failed to get ticker 'PGR' reason: Failed to perform, curl: (28) Operation timed out after 10002 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$PGR: possibly delisted; no timezone found
+Failed to get ticker 'CRM' reason: Failed to perform, curl: (28) Operation timed out after 10000 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$CRM: possibly delisted; no timezone found
+$SBAC: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$PFG: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+Failed to get ticker 'PPL' reason: Failed to perform, curl: (28) Operation timed out after 10002 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$PPL: possibly delisted; no timezone found
+$PSA: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$PNW: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+Failed to get ticker 'PNC' reason: Failed to perform, curl: (28) Operation timed out after 10000 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$PNC: possibly delisted; no timezone found
+$ROP: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$RF: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$O: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$PG: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$REG: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+Failed to get ticker 'ROL' reason: Failed to perform, curl: (28) Operation timed out after 10001 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+$ROL: possibly delisted; no timezone found
+$ROST: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$PTC: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$PEG: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$PPG: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$DGX: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+
+31 Failed downloads:
+['ROK', 'PHM', 'RVTY', 'PWR', 'RL', 'RJF', 'SPGI', 'RSG', 'RTX', 'SBAC', 'PFG', 'PSA', 'PNW', 'ROP', 'RF', 'O', 'PG', 'REG', 'ROST', 'PTC', 'PEG', 'PPG', 'DGX']: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+['REGN', 'RMD', 'SNDK', 'PGR', 'CRM', 'PPL', 'PNC', 'ROL']: possibly delisted; no timezone found
+$SNPS: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$TMO: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$TXN: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$STT: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
+$SNA: possibly delisted; no price data found  (1d 1927-12-08 -> 2026-11-13)
