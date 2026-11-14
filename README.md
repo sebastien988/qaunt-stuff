@@ -37,6 +37,15 @@ python -m venv .venv
 
 Each script downloads its own data (Yahoo Finance, and GDELT for news tone) and saves a PNG next to itself.
 
+## Tests
+
+```
+.venv/bin/pip install pytest
+.venv/bin/python -m pytest
+```
+
+The tests in `tests/` run on made-up prices, so they need no internet. They check the formulas against cases with a known answer, the backtest bookkeeping (costs, cash, rebalancing) by hand, and that no backtest uses prices from the future: each one is run twice, the second time with every price after a cut-off day replaced, and its decisions up to that day must not change.
+
 ## Updating the website
 
 `python publish.py` rebuilds the website from every PNG in the folder, rewrites this README, commits and pushes. New algorithms are picked up automatically.

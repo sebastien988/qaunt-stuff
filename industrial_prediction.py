@@ -273,6 +273,7 @@ def company_study(prices: pd.DataFrame, days: int) -> dict:
         "table": table.sort_values("Vs peers", ascending=False), "weights": pd.Series(beta, index=names),
         "ic": ic, "ic_t": tstat(ic), "spread": spread, "spread_t": tstat(spread), "dates": dates,
         "coverage": inside, "start": idx[first], "periods": len(ic),
+        "score": score, "ranges": ranges,  # the walk-forward forecasts themselves, for the tests
     }
 
 
