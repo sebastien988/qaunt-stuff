@@ -81,7 +81,7 @@ FEATURES = ["rev_1w", "rev_1m", "mom_3m", "mom_6m", "mom_12_1", "vol_1m", "vol_3
 
 # ----------------------------------------------------------------------------- data
 
-def load_panel() -> tuple[pd.DataFrame, pd.DataFrame, pd.Series]:
+def load_panel() -> tuple[pd.DataFrame, pd.DataFrame, pd.Series, pd.DataFrame]:
     spy = pd.read_csv(DATA / "etfs" / "SPY.csv", index_col=0, parse_dates=True)
     spy = spy.loc[START:, "Adj Close"]
     files = sorted(p for d in DATA.glob("stocks_*") for p in d.glob("*.csv"))
